@@ -1,10 +1,12 @@
-function populatePage (inventory) {
+function populatePage () {
   // Loop over the inventory and populate the page
+   var inventory = CarLot.getInventory();
    var counter = 0;
    var carString = ""; 
    var carRow = "";
    carString += `<div class="container">`;
    carRow += `<div class="row">`;
+   console.log(inventory);
       for(i=0; i<inventory.length; i++){
         
         var carCard = "";

@@ -6,7 +6,7 @@
 			"year": "2017",
 			"price": "$30,000",
 			"description": "This is an immaculate 2017 Nissan Rogue with only 6000 miles on it. Leather seats, power everything.",
-      "url": "http://d1arsn5g9mfrlq.cloudfront.net/sites/default/files/2017_nissan_roge_reveal_1_720_0.jpg"
+      		"url": "http://d1arsn5g9mfrlq.cloudfront.net/sites/default/files/2017_nissan_roge_reveal_1_720_0.jpg"
 		},
 
 		{
@@ -15,7 +15,7 @@
 			"year": "2017",
 			"price": "$25,000",
 			"description": "This is an immaculate 2015 Honda CR-V with only 4000 miles on it. Leather seats, power everything.",
-      "url": "http://media.caranddriver.com/images/media/331369/2017-honda-cr-v-starts-at-24945-spools-up-turbos-for-27595-photo-673224-s-450x274.jpg"
+      		"url": "http://media.caranddriver.com/images/media/331369/2017-honda-cr-v-starts-at-24945-spools-up-turbos-for-27595-photo-673224-s-450x274.jpg"
 		},
 
 		{
@@ -24,7 +24,7 @@
 			"year": "2017",
 			"price": "$1.9 Million",
 			"description": "This is an immaculate 2017 Nissan Rogue with only 100 miles on it. Leather seats, power everything.",
-      "url": "https://www.lamborghini.com/en-en/sites/en-en/files/DAM/lamborghini/model/one-off/centenario/slider/centenario.jpg"
+      		"url": "https://www.lamborghini.com/en-en/sites/en-en/files/DAM/lamborghini/model/one-off/centenario/slider/centenario.jpg"
 		}
 	]
 }

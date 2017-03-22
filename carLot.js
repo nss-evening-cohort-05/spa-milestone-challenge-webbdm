@@ -2,11 +2,6 @@ var CarLot = (function () {
   
     var inventory;
 
-    function getData() {
-      var jData = JSON.parse(this.responseText);
-      inventory = jData.cars;
-    }
-
     function fileFailed(){
       alert("Request Timed Out");
     }
@@ -21,12 +16,16 @@ var CarLot = (function () {
     loadInventory: function (callback) {
 
       var inventoryLoader = new XMLHttpRequest();
-      inventoryLoader.addEventListener("load", getData);
+      inventoryLoader.addEventListener("load", function getData() {
+        var jData = JSON.parse(this.responseText);
+        inventory = jData.cars;
+        callback();
+      });
+
       inventoryLoader.addEventListener("error", fileFailed);
       inventoryLoader.open("GET","inventory.json");
       inventoryLoader.send(); 
-
-      callback(getInventory());
+  
       
     }
   
