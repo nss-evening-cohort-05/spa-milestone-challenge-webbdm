@@ -7,7 +7,9 @@ var CarLot = (function (oldCarLot) {
 	    for(i=0; i<card.length; i++){
 
 	    	card[i].addEventListener("click", oldCarLot.resetBorder);
-	    
+	    	card[i].addEventListener("click", function (){
+     			input.value = " ";
+			});
 	    }
 
 	  }
@@ -17,8 +19,7 @@ var CarLot = (function (oldCarLot) {
   	cardListener();
 
   	input.addEventListener("keypress",function(event){
-  		event.preventDefault();
-  		console.log('listener');
+  		console.log('sets text value');
   	});
 
   }

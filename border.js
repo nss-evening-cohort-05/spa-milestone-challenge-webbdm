@@ -25,7 +25,7 @@ var CarLot = (function (oldCarLot) {
 	// }
   }
 
-  oldCarLot.changeBorders = function (thumbnail,color) {
+  oldCarLot.changeBorders = function (thumbnail) {
      
   }
   
