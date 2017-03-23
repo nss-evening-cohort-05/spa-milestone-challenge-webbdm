@@ -6,19 +6,7 @@ var CarLot = (function (oldCarLot) {
 
 	    for(i=0; i<card.length; i++){
 
-	    	card[i].classList.remove("boldBorder");
-	    	card[i].addEventListener("click", function(event){
-	    		//for(j=0; j<card.length; j++)
-
-	    		// console.log("card was clicked", event);
-	    		// console.log(event.target.parentElement.id);
-	    		event.target.parentElement.classList.add("boldBorder");
-	    		if(event.target.parentElement.id === 0){ // caption
-	    			event.target.parentElement.classList.add("boldBorder");
-	    			console.log(event.target.parentElement.classList);
-	    		}
-
-	    	});
+	    	card[i].addEventListener("click", oldCarLot.resetBorder);
 
 	    }
 
