@@ -16,6 +16,8 @@ var CarLot = (function (oldCarLot) {
 
   		if(event.target.parentElement.id === clickedElemId){
   			event.target.parentElement.classList.add("boldBorder");
+  		}else{
+  			event.target.parentElement.parentElement.classList.add("boldBorder");
   		}
 
 

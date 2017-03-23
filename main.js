@@ -1,5 +1,11 @@
 var input = document.getElementById("textInput");
 
+
+function enterClear(){
+  input.value = "";
+}
+
+
 function populatePage () {
   // Loop over the inventory and populate the page
    var inventory = CarLot.getInventory();

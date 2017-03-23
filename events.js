@@ -7,27 +7,23 @@ var CarLot = (function (oldCarLot) {
 	    for(i=0; i<card.length; i++){
 
 	    	eName = card[i].id;
-
 	    	(function (eName) {
 
 		    	card[i].addEventListener("click", oldCarLot.resetBorder);
-		    	card[i].addEventListener("click", function (){
-	     			input.value = " ";
-				});
+		    	card[i].addEventListener("click", enterClear);
 				console.log("IDtest ", i);
 				card[i].addEventListener("click", function(){	
 					oldCarLot.changeBorders(eName);
 				});
 
-			})(eName); /// Preserves each index's unique id/names with a closure
+			})(eName); /// Preserves each index's unique id/names 
+					   /// by locking it into this function each time
 	    }
-
 	  }
   
   oldCarLot.activateEvents = function() {
     
   	cardListener();
-
   	input.addEventListener("keypress",function(event){
   		console.log('sets text value');
   	});
