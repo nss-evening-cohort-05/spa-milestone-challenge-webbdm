@@ -7,7 +7,7 @@ var CarLot = (function (oldCarLot) {
 	    for(i=0; i<card.length; i++){
 
 	    	card[i].addEventListener("click", oldCarLot.resetBorder);
-
+	    
 	    }
 
 	  }

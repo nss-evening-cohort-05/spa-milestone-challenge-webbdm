@@ -3,6 +3,12 @@ var CarLot = (function (oldCarLot) {
   oldCarLot.resetBorder = function (){
   	console.log("yeaaaaaaaaa testing");
 
+  	var card = document.getElementsByClassName("thumbnail");
+  	for(j=0; j<card.length; j++){
+  		card[j].classList.remove("boldBorder");
+  		card[j].style.backgroundColor = ('white');
+  	}
+
 		
 	// 	{console.log("test" + card[i]);
 	// 	for(j=0; j<card.length; j++){

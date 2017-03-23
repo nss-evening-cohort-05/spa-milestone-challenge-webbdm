@@ -26,7 +26,7 @@ function populatePage () {
              carCard += `<h3>${inventory[i].year} ${inventory[i].make} ${inventory[i].model}</h3>`;
              carCard += `<p>${inventory[i].price}</p>`;
              carCard += `<p>${inventory[i].description}</p>`;
-         carCard += `</div>`;
+            carCard += `</div>`;
          carCard += `</div>`;
          carCard += `</div>`;
         
