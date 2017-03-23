@@ -1,3 +1,11 @@
+var input = document.getElementById("textInput");
+
+function enterClear(event){
+    if(event.keyCode === 13){
+     textInput.value = " ";
+    }
+}
+
 function populatePage () {
   // Loop over the inventory and populate the page
    var inventory = CarLot.getInventory();
