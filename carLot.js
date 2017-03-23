@@ -9,7 +9,6 @@ var CarLot = (function () {
   return {
 
     getInventory: function(){
-    
         return inventory;
     },
 
@@ -24,9 +23,7 @@ var CarLot = (function () {
 
       inventoryLoader.addEventListener("error", fileFailed);
       inventoryLoader.open("GET","inventory.json");
-      inventoryLoader.send(); 
-  
-      
+      inventoryLoader.send();  
     }
   
   };
