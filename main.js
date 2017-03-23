@@ -19,8 +19,8 @@ function populatePage () {
         
         var carCard = "";
 
-         carCard += `<div class="col-sm-4 card" id="${i}">`;
-         carCard +=`<div class="thumbnail">`;
+         carCard += `<div class="col-sm-4 card">`;
+         carCard +=`<div class="thumbnail" id="${i}">`;
             carCard +=`<img src="${inventory[i].url}" alt="...">`;
             carCard += `<div class="caption">`;
              carCard += `<h3>${inventory[i].year} ${inventory[i].make} ${inventory[i].model}</h3>`;
