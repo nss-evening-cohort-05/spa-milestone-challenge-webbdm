@@ -8,7 +8,6 @@ function populatePage () {
    var carRow = "";
    carString += `<div class="container">`;
    carRow += `<div class="row">`;
-   console.log(inventory);
       for(i=0; i<inventory.length; i++){
         
         var carCard = "";

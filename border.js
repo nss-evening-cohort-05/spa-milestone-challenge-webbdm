@@ -9,8 +9,20 @@ var CarLot = (function (oldCarLot) {
   		card[j].style.backgroundColor = ('white');
   	}
 
-		
-	// 	{console.log("test" + card[i]);
+  }
+
+  oldCarLot.changeBorders = function (clickedElemId) {
+  		console.log("The ID is ", clickedElemId, event.target);
+
+  		if(event.target.parentElement.id === clickedElemId){
+  			event.target.parentElement.classList.add("boldBorder");
+  		}
+
+
+
+ //  	{
+ //  		console.log("test" + card[i]);
+
 	// 	for(j=0; j<card.length; j++){
 	// 		card[i].classList.remove("boldBorder");
 	// 	}
@@ -23,9 +35,6 @@ var CarLot = (function (oldCarLot) {
 	// 		console.log(event.target.parentElement.classList);
 	// 	}
 	// }
-  }
-
-  oldCarLot.changeBorders = function (thumbnail) {
      
   }
   
