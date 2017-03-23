@@ -11,7 +11,6 @@ var CarLot = (function (oldCarLot) {
 
 		    	card[i].addEventListener("click", oldCarLot.resetBorder);
 		    	card[i].addEventListener("click", enterClear);
-				console.log("IDtest ", i);
 				card[i].addEventListener("click", function(){	
 					oldCarLot.changeBorders(eName);
 				});
@@ -20,12 +19,12 @@ var CarLot = (function (oldCarLot) {
 					   /// by locking it into this function each time
 	    }
 	  }
-  
+
   oldCarLot.activateEvents = function() {
     
   	cardListener();
   	input.addEventListener("keypress",function(event){
-  		console.log('sets text value');
+  		//console.log('sets text value');
   	});
 
   }

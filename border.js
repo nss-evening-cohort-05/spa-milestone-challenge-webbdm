@@ -1,26 +1,27 @@
 var CarLot = (function (oldCarLot) {
   
   oldCarLot.resetBorder = function (){
-  	console.log("yeaaaaaaaaa testing");
 
   	var card = document.getElementsByClassName("thumbnail");
   	for(j=0; j<card.length; j++){
   		card[j].classList.remove("boldBorder");
   		card[j].style.backgroundColor = ('white');
   	}
-
   }
 
   oldCarLot.changeBorders = function (clickedElemId) {
-  		console.log("The ID is ", clickedElemId, event.target);
 
   		if(event.target.parentElement.id === clickedElemId){
   			event.target.parentElement.classList.add("boldBorder");
+  		  	event.target.parentElement.style.backgroundColor = ("gray");
+  			console.log(event.target.parentElement.classList);
   		}else{
   			event.target.parentElement.parentElement.classList.add("boldBorder");
+  			event.target.parentElement.parentElement.style.backgroundColor = ("gray");
+  			console.log(event.target.parentElement.parentElement.classList);
   		}
 
-
+  		// syncInput();
 
  //  	{
  //  		console.log("test" + card[i]);
