@@ -1,31 +1,31 @@
-var CarLot = (function () {
-  
+var CarLot = (function() {
+
     var inventory;
 
-    function fileFailed(){
-      alert("Request Timed Out");
+    function fileFailed() {
+        alert("Request Timed Out");
     }
 
-  return {
+    return {
 
-    getInventory: function(){
-        return inventory;
-    },
+        getInventory: function() {
+            return inventory;
+        },
 
-    loadInventory: function (callback) {
+        loadInventory: function(callback) {
 
-      var inventoryLoader = new XMLHttpRequest();
-      inventoryLoader.addEventListener("load", function getData() {
-        var jData = JSON.parse(this.responseText);
-        inventory = jData.cars;
-        callback();
-      });
+            var inventoryLoader = new XMLHttpRequest();
+            inventoryLoader.addEventListener("load", function getData() {
+                var jData = JSON.parse(this.responseText);
+                inventory = jData.cars;
+                callback();
+            });
 
-      inventoryLoader.addEventListener("error", fileFailed);
-      inventoryLoader.open("GET","inventory.json");
-      inventoryLoader.send();  
-    }
-  
-  };
+            inventoryLoader.addEventListener("error", fileFailed);
+            inventoryLoader.open("GET", "inventory.json");
+            inventoryLoader.send();
+        }
+
+    };
 
 })();

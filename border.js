@@ -1,28 +1,28 @@
-var CarLot = (function (oldCarLot) {
-  
-  oldCarLot.resetBorder = function (){
+var CarLot = (function(oldCarLot) {
 
-  	var card = document.getElementsByClassName("thumbnail");
-  	for(j=0; j<card.length; j++){
-  		card[j].classList.remove("boldBorder");
-  		card[j].style.backgroundColor = ('white');
-  	}
-  }
+    oldCarLot.resetBorder = function() {
 
-  oldCarLot.changeBorders = function (clickedElemId) {
+        var card = document.getElementsByClassName("thumbnail");
+        for (j = 0; j < card.length; j++) {
+            card[j].classList.remove("boldBorder");
+            card[j].style.backgroundColor = ('white');
+        }
+    }
 
-  		if(event.target.parentElement.id === clickedElemId){
-  			event.target.parentElement.classList.add("boldBorder");
-  		  	event.target.parentElement.style.backgroundColor = ("gray");
-  			console.log(event.target.parentElement.classList);
-  		}else{
-  			event.target.parentElement.parentElement.classList.add("boldBorder");
-  			event.target.parentElement.parentElement.style.backgroundColor = ("gray");
-  			console.log(event.target.parentElement.parentElement.classList);
-  		}
+    oldCarLot.changeBorders = function(clickedElemId) {
 
-  }
-  
-  return oldCarLot;
+        if (event.target.parentElement.id === clickedElemId) {
+            event.target.parentElement.classList.add("boldBorder");
+            event.target.parentElement.style.backgroundColor = ("gray");
+            console.log(event.target.parentElement.classList);
+        } else {
+            event.target.parentElement.parentElement.classList.add("boldBorder");
+            event.target.parentElement.parentElement.style.backgroundColor = ("gray");
+            console.log(event.target.parentElement.parentElement.classList);
+        }
 
-})(CarLot); 
+    }
+
+    return oldCarLot;
+
+})(CarLot);
