@@ -13,6 +13,7 @@ var CarLot = (function (oldCarLot) {
 		    	card[i].addEventListener("click", enterClear);
 				card[i].addEventListener("click", function(){	
 					oldCarLot.changeBorders(eName);
+					input.focus();
 				});
 
 			})(eName); /// Preserves each index's unique id/names 
