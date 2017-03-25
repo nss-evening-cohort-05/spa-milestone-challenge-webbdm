@@ -5,6 +5,7 @@
 ## Swift Auto
 
 - Milestone Challenge 
+  - *Goal*
 
 
 ![Car](https://github.com/nss-evening-cohort-05/spa-milestone-challenge-webbdm/blob/challenge/img/Swift.png)
