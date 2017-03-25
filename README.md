@@ -4,7 +4,7 @@
 
 ![Car](https://github.com/nss-evening-cohort-05/spa-milestone-challenge-webbdm/blob/challenge/img/Swift.png)
 
-### Goal
+## Goal
 Our goal for this Milestone Challenge was to create an inventory page for a car dealership under the following guidelines:
 
 ```You operate a used car lot, and need to have an application where you can update the description and availability of each car in your inventory. You are going to using the Bootstrap grid to lay out your HTML structure.```
@@ -18,7 +18,7 @@ Our goal for this Milestone Challenge was to create an inventory page for a car 
 	- A color name of your choice (see behavior requirement 5 above).
  
 
-## Editing Data
+### Editing Data
 - To modify your inventory or add new cars, edit the data in the `inventory.json` file
 
 ![Car](https://github.com/nss-evening-cohort-05/spa-milestone-challenge-webbdm/blob/challenge/img/SwiftAuto.jpg)
