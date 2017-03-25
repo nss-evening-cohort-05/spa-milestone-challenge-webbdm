@@ -1,9 +1,8 @@
 ![](http://nashvillesoftwareschool.com/images/NSS-logo-horizontal-small.jpg)
 
+## Single Page Applications Milestone Challenge 
 
 ![Car](https://github.com/nss-evening-cohort-05/spa-milestone-challenge-webbdm/blob/challenge/img/Swift.png)
-
-## Single Page Applications Milestone Challenge 
 
 ### Goal
 Our goal for this Milestone Challenge was to create an inventory page for a car dealership under the following guidelines:
