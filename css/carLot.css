@@ -1,35 +1,35 @@
-body{
-  background: url("http://breakingbrown.com/wp-content/uploads/2015/12/dealership.jpg") no-repeat center center fixed;
-  background-size: cover;
+body {
+    background: url("http://breakingbrown.com/wp-content/uploads/2015/12/dealership.jpg") no-repeat center center fixed;
+    background-size: cover;
 }
 
-h1{
-  font-family: 'Russo One', sans-serif;
-  font-size: 50px;
-  margin: 0 0 0 0;
+h1 {
+    font-family: 'Russo One', sans-serif;
+    font-size: 50px;
+    margin: 0 0 0 0;
 }
 
-.navbar{
-  height: 87px;
+.navbar {
+    height: 87px;
 }
 
 .navbar form {
-  margin-top: 25px;
+    margin-top: 25px;
 }
 
-.carContainer{
-  margin-top: 8%;
+.carContainer {
+    margin-top: 8%;
 }
 
-.thumbnail{
-  border: 2px solid black;
+.thumbnail {
+    border: 2px solid black;
 }
 
-.thumbnail h3{
-  text-align: center;
-  margin-bottom: 20px;
+.thumbnail h3 {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 .boldBorder {
-  border: 5px solid black;
+    border: 5px solid black;
 }

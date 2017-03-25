@@ -1,36 +1,37 @@
-var CarLot = (function (oldCarLot) {
-  
-	  function cardListener(event){
-	    var card = document.getElementsByClassName("thumbnail");
-	    //console.log("testing cardListener");
+var CarLot = (function(oldCarLot) {
 
-	    for(i=0; i<card.length; i++){
+    function cardListener(event) {
+        var card = document.getElementsByClassName("thumbnail");
+        //console.log("testing cardListener");
 
-	    	eName = card[i].id;
-	    	(function (eName) {
+        for (i = 0; i < card.length; i++) {
 
-		    	card[i].addEventListener("click", oldCarLot.resetBorder);
-		    	card[i].addEventListener("click", enterClear);
-				card[i].addEventListener("click", function(){	
-					oldCarLot.changeBorders(eName);
-					input.focus();
-				});
+            eName = card[i].className;
+            console.log(eName);
+            (function(eName) {
 
-			})(eName); /// Preserves each index's unique id/names 
-					   /// by locking it into this function each time
-	    }
-	  }
+                card[i].addEventListener("click", oldCarLot.resetBorder);
+                card[i].addEventListener("click", enterClear);
+                card[i].addEventListener("click", function() {
+                    oldCarLot.changeBorders(eName);
+                    input.focus();
+                });
 
-  oldCarLot.activateEvents = function() {
-    
-  	cardListener();
-  	input.addEventListener("keypress",function(event){
-  		//console.log('sets text value');
-  	});
+            })(eName); /// Preserves each index's unique id/names 
+            /// by locking it into this function each time
+        }
+    }
 
-  }
-  
-  return  oldCarLot;
-  
+    oldCarLot.activateEvents = function() {
+
+        cardListener();
+        input.addEventListener("keypress", function(event) {
+            //console.log('sets text value');
+        });
+
+    }
+
+    return oldCarLot;
+
 
 })(CarLot);
