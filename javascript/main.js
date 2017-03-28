@@ -56,7 +56,6 @@ window.addEventListener("keyup", function() {
 
     var clicked = document.getElementsByClassName("boldBorder");
     var description = clicked[0].childNodes[1].childNodes[2];
-    console.log(description.innerText);
     description.innerText = input.value;
 
 });
