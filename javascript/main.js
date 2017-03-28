@@ -29,10 +29,17 @@ function populatePage() {
 
         carRow += carCard;
         counter += 1;
-        if (counter % 3 === 0) {
+
+        if (counter % 3 === 0) { // Cap the row every 3 cars 
+            carRow += `</div>`;
+            carString += carRow;
+            carRow = "";
+            carRow += `<div class="row">`;
+        } else if (counter === inventory.length) { // Add the closing tag to a row here if it's the last car in the array
             carRow += `</div>`;
             carString += carRow;
         }
+
     }
 
     carString += `</div>`;

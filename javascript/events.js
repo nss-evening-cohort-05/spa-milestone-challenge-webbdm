@@ -2,12 +2,10 @@ var CarLot = (function(oldCarLot) {
 
     function cardListener(event) {
         var card = document.getElementsByClassName("thumbnail");
-        //console.log("testing cardListener");
 
         for (i = 0; i < card.length; i++) {
 
             eName = card[i].className;
-            console.log(eName);
             (function(eName) {
 
                 card[i].addEventListener("click", oldCarLot.resetBorder);
@@ -23,10 +21,8 @@ var CarLot = (function(oldCarLot) {
     }
 
     oldCarLot.activateEvents = function() {
-
         cardListener();
         input.addEventListener("keypress", function(event) {
-            //console.log('sets text value');
         });
 
     }
