@@ -3,7 +3,7 @@ var CarLot = (function(oldCarLot) {
     function cardListener(event) {
         var card = document.getElementsByClassName("thumbnail");
 
-        for (i = 0; i < card.length; i++) {
+        for (i = 0; i < card.length; i++) { // Use array.map instead of "for loops" on future versions
 
             eName = card[i].className;
             (function(eName) {
@@ -16,15 +16,13 @@ var CarLot = (function(oldCarLot) {
                 });
 
             })(eName); /// Preserves each index's unique id/names 
-            /// by locking it into this function each time
+                       /// by locking it into this function each time
         }
     }
 
     oldCarLot.activateEvents = function() {
         cardListener();
-        input.addEventListener("keypress", function(event) {
-        });
-
+        input.addEventListener("keypress", function(event) {});
     }
 
     return oldCarLot;
